@@ -187,16 +187,15 @@ float: right;/* 画像や箱の回り込み */
 }
 
 .item img{
-
   max-width: 100%;
   height: auto;
+  border:solid 2px #ccc;
   }
 
-   
-.item img {
-  animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+.item img:hover{
+border:solid 2px #203aad;
 }
- 
+
 @keyframes zoomIn {
   0% {
     transform: scale(0.8);
@@ -219,6 +218,7 @@ float: right;/* 画像や箱の回り込み */
   font-size: 30px;
   font-family: sans-serif;
 }
+
 
 /* ===== 値段表のスタイル ===== */
 /* セクション */
@@ -277,50 +277,7 @@ float: right;/* 画像や箱の回り込み */
 
 /* ===== アクセス情報のスタイル ===== */
 /* セクション */
-.access {
-  padding: 30px;
-  background-color: #f5f5f5;
-  height: 400px;
-  color: #000000;
-}
 
-/* h3見出し */
-.access h3 {
-  font-size: 130px;
-  font-family:Tangerine;/* フォントの種類 */
-  margin-bottom:-90px;
-  margin-top:0px;
-}
-
-.access h4{
-  font-family:Tangerine;/* フォントの種類 */
-  font-size:50px;
-  float:left;
-  padding-right:60px;
-}
-
-/* リスト */
-.access ul {
-  list-style-type: none;/* リストのマーカー */
-  padding-left: 0px;
-   font-family:"Note Eerif JP" ,serif;  
-}
-
-.access a {
-  color:#000000;
-  text-decoration-color:#000000;
-    font-family:"Note Eerif JP" ,serif; 
-}
-
-.access a:hover {
-  color: #3a5199;
-  text-decoration-color:#3a5199;
-}
-/* 箱 */
-.access div {
-  float: left;
-  width: 50%;
-}
 
 /* フッター */
 footer {
