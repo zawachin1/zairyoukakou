@@ -55,8 +55,41 @@ nav a:hover {
   color: #3a5199;
   text-decoration-color:#3a5199;
 }
+/* 見出し */
+.sign {
+  text-align:center;/*文字を中央に揃える*/
+  font-family:Tangerine;/* フォントの種類 */
+  color:#2f2e33;
+  background:rgba(255,255,255,0.3);
+  background-size:300px 300px;
+  padding-top:20px;
+}
 
+.sign {
+  animation: fadeIn 3.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sign h1 {
+  font-size: 100px;/* フォントの大きさ */
+  margin-top:-10px;/*位置調整*/
+}
+
+.sign h2 {
+  font-size:30px;/*文字の大きさ*/
+  margin-top:-80px;/*h1とh2の間を狭くする*/
+  padding-bottom:10px;
+}
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
 header {
   background-image: url(header.jpg);
   height:450px;
@@ -64,12 +97,17 @@ header {
   padding-top:150px;
 }
 
+
+
+/* ===== お店紹介のスタイル ===== */
+/* セクション */
 .shop {
   background-color:#f5f5f5;/* 背景の色 */
   color: #000000;
   padding: 20px;
 }
 
+/* h2見出し */
 .title {
   font-size: 30px;
   border-left-style: solid;
@@ -104,9 +142,33 @@ float: right;/* 画像や箱の回り込み */
 }
 
 
+/* ===== おすすめ紹介のスタイル ===== */
+/* セクション */
 .photo {
-  height: auto;
-  padding: 2%;
+  padding: 30px;
+  background-color:#f5f5f5;
+}
+
+/* h2見出し */
+.photo h2 {
+  color: #000000;
+  border-color: #000000;
+}
+
+/* h3見出し */
+.photo h3 {
+  color: #000000;
+  font-family:"Note Serif JP", serif;
+}
+
+.photo h4 {
+  color:#000000;
+  font-family:"Note Eerif JP" ,serif;
+  padding-top:-10px;
+}
+
+.photo div p {
+  color:#000000;
 }
 
 .picture{
@@ -155,6 +217,61 @@ border:solid 2px #203aad;
   -1px 0 0 #000000, 1px 0 0 #000000;
   font-size: 30px;
   font-family: sans-serif;
+}
+
+
+/* ===== 値段表のスタイル ===== */
+/* セクション */
+.price {
+  padding: 30px;
+  background-color:#f5f5f5;
+}
+
+/* h2見出し */
+.price h2 {
+  color: #000000;
+  border-color: #00000;
+  font-family:"Note Eerif JP" ,serif; 
+}
+
+/* 表 */
+.price table {
+  background-color: #ffffff;
+  border-collapse: collapse;/* 表の隙間（すきま） */
+  width: 100%;
+  font-family:"Note Eerif JP" ,serif; 
+}
+
+/* 表のセル */
+.price td {
+  border: 1px solid #000000;
+  padding: 10px;
+  font-family:"Note Eerif JP" ,serif; 
+}
+
+/* 表の見出しセル */
+.price th {
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color:#bacade;
+  text-align: left;
+  font-family:"Note Eerif JP" ,serif; 
+}
+.price img {
+  margin: auto;
+  display: block;
+  width:300px;
+  height:270px;
+}
+
+/* 表の見出しセル（季節） */
+.season th {
+  background-color: #bacade;
+  font-family:"Note Eerif JP" ,serif; 
+}
+
+.price p {
+  font-family:"Note Eerif JP" ,serif; 
 }
 
 /* フッター */
